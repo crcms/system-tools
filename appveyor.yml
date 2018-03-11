@@ -28,3 +28,5 @@ build_script:
   - yarn build
 
 test: off
+
+version: 0.0."{build}"
