@@ -7,9 +7,9 @@
       <el-main class="app-main">
         <router-view></router-view>
       </el-main>
-      <el-footer class="app-footer" style="height: 40px;">
-        <vue-footer></vue-footer>
-      </el-footer>
+      <!--<el-footer class="app-footer" style="height: 40px;">-->
+        <!--<vue-footer></vue-footer>-->
+      <!--</el-footer>-->
     </el-container>
   </div>
 </template>
@@ -31,11 +31,14 @@
   background: #222233;
 }
 .app-main {
-  padding:0px;
+  padding:0px!important;
 }
 .app-footer {
   margin-top: 20px;
   height: 40px;
   line-height: 40px;
+  /*position: absolute;
+  bottom: 0px;
+  display: block;*/
 }
 </style>
