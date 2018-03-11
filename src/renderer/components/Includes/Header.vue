@@ -1,5 +1,8 @@
 <template>
-    <el-header class="main-header">系统工具</el-header>
+    <div class="main-header">
+        系统工具
+    </div>
+    <!--<el-header class="main-header"></el-header>-->
 </template>
 
 <script>

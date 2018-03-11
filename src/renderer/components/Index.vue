@@ -1,46 +1,42 @@
 <template>
-    <div id="index">
-        <el-container>
-            <el-main class="main">
-                <div class="tools-header">
-                    <ul>
-                        <li v-for="(value, key, index) in options" :key="'options_' + key"
-                            :class="{active:isActive(key)}"
-                            @click="setActive(key)">
-                            {{value.text}}
-                        </li>
-                    </ul>
-                </div>
-                <div class="text-raw">
-                    <el-input
-                            type="textarea"
-                            :rows="6"
-                            placeholder="请输入内容"
-                            v-model="textRaw">
-                    </el-input>
-                </div>
-                <div class="tools-select">
-                    <el-select v-model="type" placeholder="请选择">
-                        <el-option
-                                v-for="(value, key, index) in activeOperation"
-                                :key="'type_' + key"
-                                :label="value"
-                                :value="key"
-                        >
-                        </el-option>
-                    </el-select>
-                    <el-button type="primary" @click="cover">转换</el-button>
-                </div>
-                <div class="text-new">
-                    <el-input
-                            type="textarea"
-                            :rows="6"
-                            placeholder="请输入内容"
-                            v-model="textNew">
-                    </el-input>
-                </div>
-            </el-main>
-        </el-container>
+    <div class="main">
+        <div class="tools-header">
+            <ul>
+                <li v-for="(value, key, index) in options" :key="'options_' + key"
+                    :class="{active:isActive(key)}"
+                    @click="setActive(key)">
+                    {{value.text}}
+                </li>
+            </ul>
+        </div>
+        <div class="text-raw">
+            <el-input
+                    type="textarea"
+                    :rows="6"
+                    placeholder="请输入内容"
+                    v-model="textRaw">
+            </el-input>
+        </div>
+        <div class="tools-select">
+            <el-select v-model="type" placeholder="请选择">
+                <el-option
+                        v-for="(value, key, index) in activeOperation"
+                        :key="'type_' + key"
+                        :label="value"
+                        :value="key"
+                >
+                </el-option>
+            </el-select>
+            <el-button type="primary" @click="cover">转换</el-button>
+        </div>
+        <div class="text-new">
+            <el-input
+                    type="textarea"
+                    :rows="6"
+                    placeholder="请输入内容"
+                    v-model="textNew">
+            </el-input>
+        </div>
     </div>
 </template>
 
@@ -165,17 +161,17 @@
     body {
     }
 
-    .main-header {
+   /* .main-header {
         background: #222233;
         color: #ffffff;
         font-size: 24px;
         line-height: 60px;
         display: block;
-    }
+    }*/
 
-    .main {
+    /*.main {
         padding: 0px;
-    }
+    }*/
 
     .tools-header {
         background: #222233;
