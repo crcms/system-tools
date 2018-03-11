@@ -23,10 +23,10 @@ install:
   - git reset --hard HEAD
   - yarn
   - node --version
+  - ps: $env:package_version = (Get-Content -Raw -Path package.json | ConvertFrom-Json).version
+  - ps: Update-AppveyorBuild -Version "$env:package_version-$env:APPVEYOR_BUILD_NUMBER"
 
 build_script:
   - yarn build
 
 test: off
-
-version: 0.0."{build}"
