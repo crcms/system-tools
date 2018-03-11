@@ -30,3 +30,5 @@ build_script:
   - yarn build
 
 test: off
+
+version: "$package_version"
