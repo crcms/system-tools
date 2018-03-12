@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-import config from '../../../../package.json'
+import config from '../../../../../package.json'
 
 export default {
     name: "app-footer",

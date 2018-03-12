@@ -7,16 +7,13 @@
       <el-main class="app-main">
         <router-view></router-view>
       </el-main>
-      <!--<el-footer class="app-footer" style="height: 40px;">-->
-        <!--<vue-footer></vue-footer>-->
-      <!--</el-footer>-->
     </el-container>
   </div>
 </template>
 
 <script>
-  import vueHeader from './components/Includes/Header';
-  import vueFooter from './components/Includes/Footer';
+  import vueHeader from './components/includes/header/header';
+  import vueFooter from './components/includes/footer/footer';
 
   export default {
     name: 'basic-tools',
